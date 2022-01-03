@@ -1,0 +1,98 @@
+.footerParentDiv {
+  width: 100%;
+}
+.footerParentDiv .content {
+  display: flex;
+  background: #ebeeef;
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 47, 52, 0.2);
+  font-size: 14px;
+  line-height: 20px;
+}
+.contentChild {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.contentSection {
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-basis: 20%;
+  color: #002f34;
+}
+.contentSection ul {
+  padding: 0;
+  list-style: none;
+  margin: 8px 0 0;
+}
+.contentSection ul li a {
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #002f34;
+  color: rgba(0, 47, 52, 0.64);
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.followUs span {
+  display: block;
+  color: #002f34;
+}
+.socialIcon a {
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #002f34;
+  color: rgba(0, 47, 52, 0.64);
+  display: inline-block;
+}
+.socialIcon a span svg {
+  width: 33px;
+  height: 33px;
+  padding-right: 8px;
+}
+.socialIcon a span svg path {
+  fill: rgba(0, 47, 52, 0.64);
+}
+.download a {
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #002f34;
+  color: rgba(0, 47, 52, 0.64);
+}
+.download a img {
+  padding-right: 8px;
+}
+
+.footerParentDiv .footer {
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  background: #002f34;
+  padding: 16px 0;
+}
+.footerParentDiv .footer .footer-child {
+  flex-direction: row-reverse;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerParentDiv .footer .footer-child-section span {
+  font-weight: 700;
+  padding-right: 8px;
+}

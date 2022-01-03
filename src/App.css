@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  font-family: "Outfit", sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  direction: ltr;
+  text-align: left;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}

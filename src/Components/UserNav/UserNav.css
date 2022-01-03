@@ -1,0 +1,37 @@
+._2dtTPe {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  right: 50px;
+  top: 60px;
+}
+._2Jv6ie {
+  column-count: 1;
+  width: 200px;
+  box-shadow: 0 4px 12px 1px rgb(0 0 0 / 50%);
+  border-radius: 4px;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+._3Wfs8e ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+._3Wfs8e li {
+  cursor: pointer;
+  padding: 8px 15px 8px 15px;
+}
+._3Wfs8e li span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #002f34;
+}
+._3Wfs8e li ._3K1Q5 {
+  float: right;
+}
+._3Wfs8 li ._3K1Q5 button {
+  height: 20px;
+}

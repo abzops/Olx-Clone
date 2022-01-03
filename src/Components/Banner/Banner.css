@@ -1,0 +1,132 @@
+/* quick menu style */
+
+.bannerChildDiv {
+  padding: 68px 16px 0;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+  margin: 0 0 4px;
+  z-index: 9;
+}
+.menubar {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  position: relative;
+  height: 44px;
+}
+.menuBarChild {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: #002f34;
+}
+.categoryMenu {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.categoryMenu .span1 {
+  font-size: 13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 31px;
+  font-weight: 700;
+}
+.downArrow {
+  text-align: center;
+  transition: transform 0.5s;
+}
+.downArrow .arrowBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+.otherQuickOptions {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 152px);
+}
+.otherQuickOptions .links {
+  margin: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 32px;
+}
+.otherQuickOptions .links a {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  color: #002f34;
+  text-decoration: none;
+}
+.otherQuickOptions .links .links-aTag {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  color: #002f34;
+  text-decoration: none;
+}
+
+/* banner style */
+
+.banner {
+  background-image: url(https://statics.olx.in/olxin/banners/hero_bg_in_v1@1x.png);
+  height: 135px;
+  top: 112px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.bannerChild {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+.bannerButton {
+  margin-left: 9rem;
+  color: #002f34;
+  border-color: #fff;
+  background-color: #fff;
+  width: 102px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  padding: 0 7px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 40px;
+}
+.bannerChildDiv .banner img {
+}
+
+@media only screen and (max-width: 700px) {
+  .otherQuickOptions {
+    display: none;
+  }
+  .bannerChildDiv .banner {
+    position: relative;
+  }
+}

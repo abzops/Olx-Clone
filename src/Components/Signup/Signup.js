@@ -183,7 +183,7 @@ export default function Signup(props) {
                                     setPhoneNumber(e.target.value);
                                   }}
                                   className="rui-3vs1L rui-2LyaK"
-                                  style={{ width: "167px" }}
+                                  style={{ width: "166px" }}
                                 />
                                 <div className="rui-1pgaV"></div>
                               </div>

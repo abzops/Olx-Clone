@@ -5,7 +5,7 @@ import firebase from "firebase";
 import Home from "./Pages/Home";
 import Signup from "../src/Pages/Signup";
 import Login from "./Pages/Login";
-import AddTutorial from "./Components/Signup/add-tutorial.component";
+import Create from "./Components/Create/Create";
 import { AuthContext, FirebaseContext } from "./store/Context";
 function App() {
   const { setUser } = useContext(AuthContext);
@@ -20,8 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
-          <Route path="/AddTutorial" element={<AddTutorial />}></Route>
           <Route path="/Login" element={((<Home />), (<Login />))}></Route>
+          <Route path="/create" element={<Create />}></Route>
         </Routes>
       </Router>
     </div>

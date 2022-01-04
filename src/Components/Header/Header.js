@@ -3,6 +3,7 @@ import React, { useState, useContext } from "react";
 // import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Login from "../Login/Login";
 import UserNav from "../UserNav/UserNav";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 import OlxLogo from "../../assets/OlxLogo";
@@ -319,7 +320,7 @@ function Header(_props) {
                         width="24px"
                         height="24px"
                         viewBox="0 0 1024 1024"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         onClick={() => {
                           setTick(!tick);
                         }}
@@ -367,7 +368,7 @@ function Header(_props) {
                 <>{UserDD ? <UserNav /> : null}</>
               ) : (
                 <Login trigger={showLogin} setTrigger={setshowLogin} />
-              )}
+              )}{" "}
               <button
                 type="button"
                 data-aut-id="btnLogin"
@@ -379,7 +380,7 @@ function Header(_props) {
               >
                 <span>{user ? user.displayName : "Login"}</span>
               </button>
-              <a class="_21nYN" rel="" data-aut-id="btnSell" href="/en-in/post">
+              <Link class="_21nYN" to='/create'>
                 <svg
                   width="104"
                   height="48"
@@ -413,7 +414,7 @@ function Header(_props) {
                       viewBox="0 0 1024 1024"
                       data-aut-id="icon"
                       class=""
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       <path
                         class="rui-l7uK1"
@@ -423,7 +424,7 @@ function Header(_props) {
                   </span>
                   <span>Sell</span>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

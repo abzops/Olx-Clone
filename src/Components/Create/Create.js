@@ -9,6 +9,8 @@ import { FirebaseContext, AuthContext } from "../../store/Context";
 import firebase from "firebase";
 
 const Create = () => {
+  const [showPopUp, setshowPopUp] = useState(false);
+  const [showLoading, setshowLoading] = useState(false);
   const [showCatogory, setShowCatogory] = useState(true);
   const [shoWw1, setShowW1] = useState(
     false,
@@ -38,22 +40,157 @@ const Create = () => {
   const [neighbourhood, setNeighbourhood] = useState("");
   const [catogory, setCatogory] = useState("");
   const [image, setImage] = useState();
-
+  const date = new Date();
   const handleSubmit = () => {
+    setshowLoading(true);
     firebase
       .storage()
       .ref(`/image/${image.name}`)
       .put(image)
       .then(({ ref }) => {
-        alert("fuck");
+        console.log("1");
         ref.getDownloadURL().then((url) => {
-          console.log(url);
+          console.log("2");
+          firebase
+            .firestore()
+            .collection("products")
+            .add({
+              catogory,
+              brand,
+              title,
+              description,
+              price,
+              state,
+              city,
+              neighbourhood,
+              url,
+              userId: user.uid,
+              createdAt: date.toDateString(),
+            })
+            .then(() => {
+              console.log("3");
+              setshowLoading(false);
+              setshowPopUp(true);
+            });
         });
       });
   };
 
   return (
     <div>
+      {showPopUp ? (
+        <div className="rui-3edbr Bv1yc">
+          <div className="SJzZq" id="SJzZq">
+            <h1
+              className="o_CSw"
+              id="o_CSw"
+              style={{ textTransform: "uppercase" }}
+            >
+              Your ad was successfully posted!
+            </h1>
+
+            <svg
+              class="checkmark"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 52 52"
+            >
+              <circle
+                class="checkmark__circle"
+                cx="26"
+                cy="26"
+                r="25"
+                fill="none"
+              />
+              <path
+                class="checkmark__check"
+                fill="none"
+                d="M14.1 27.2l7.1 7.2 16.7-16.8"
+              />
+            </svg>
+            <Link to={"/"}>
+              <button
+                type="button"
+                className="rui-39-wj rui-3mpqt rui-1JPTg _3bFmz"
+              >
+                Done
+              </button>
+            </Link>
+          </div>
+        </div>
+      ) : null}
+      {showLoading ? (
+        <div className="rui-3edbr Bv1yc">
+          <div className="SJzZq" id="SJzZq2" >
+            <h1
+              className="o_CSw"
+              id="o_CSw"
+              style={{ textTransform: "uppercase" }}
+            >
+              just a moment
+            </h1>
+
+            <svg
+              class="checkmark"
+              version="1.1"
+              id="L2"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 100"
+              enable-background="new 0 0 100 100"
+            >
+              <circle
+                fill="none"
+                stroke="#002f34"
+                stroke-width="4"
+                stroke-miterlimit="10"
+                cx="50"
+                cy="50"
+                r="48"
+              />
+              <line
+                fill="none"
+                stroke-linecap="round"
+                stroke="#002f34"
+                stroke-width="4"
+                stroke-miterlimit="10"
+                x1="50"
+                y1="50"
+                x2="85"
+                y2="50.5"
+              >
+                <animateTransform
+                  attributeName="transform"
+                  dur="2s"
+                  type="rotate"
+                  from="0 50 50"
+                  to="360 50 50"
+                  repeatCount="indefinite"
+                />
+              </line>
+              <line
+                fill="none"
+                stroke-linecap="round"
+                stroke="#002f34"
+                stroke-width="4"
+                stroke-miterlimit="10"
+                x1="50"
+                y1="50"
+                x2="49.5"
+                y2="74"
+              >
+                <animateTransform
+                  attributeName="transform"
+                  dur="15s"
+                  type="rotate"
+                  from="0 50 50"
+                  to="360 50 50"
+                  repeatCount="indefinite"
+                />
+              </line>
+            </svg>
+          </div>
+        </div>
+      ) : null}
       <header className="_1PEpL _1FbYj" data-aut-id="navigationHeader">
         <div className="_35z3k">
           <span className="_3zpX0">
@@ -1029,11 +1166,15 @@ const Create = () => {
                             type="button"
                             id="btnPost"
                             onClick={handleSubmit}
-                            className={
-                              btn
-                                ? "rui-39-wj  rui-3mpqt rui-1JPTg _3bFmz"
-                                : "rui-39-wj rui-3mpqt2  rui-1JPTg _3bFmz"
-                            }
+                            className={`rui-39-wj ${
+                              btn ? "rui-3mpqt" : "rui-3mpqt2"
+                            }  rui-1JPTg _3bFmz`}
+
+                            // {
+                            //   btn
+                            //     ?
+                            //     : "rui-39-wj rui-3mpqt2  rui-1JPTg _3bFmz"
+                            // }
                           >
                             post Now
                           </button>

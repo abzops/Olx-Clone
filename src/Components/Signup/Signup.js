@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 
 import "./Signup.css";
 import "firebase/firestore";
-import { FirebaseContext } from "../../store/Context";
+import { AuthContext, FirebaseContext } from "../../store/Context";
 import firebase from "firebase";
 
 export default function Signup(props) {
@@ -12,7 +12,8 @@ export default function Signup(props) {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
   const { firebaseApp } = useContext(FirebaseContext);
-
+  const { user } = useContext(AuthContext);
+  const date = new Date();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Button clicked");
@@ -21,7 +22,9 @@ export default function Signup(props) {
       .createUserWithEmailAndPassword(email, password)
       .then((result) => {
         result.user
-          .updateProfile({ displayName: username })
+          .updateProfile({
+            displayName: username,
+          })
           .then(console.log("user authentication completed"))
 
           .then(() => {
@@ -32,6 +35,7 @@ export default function Signup(props) {
                 id: result.user.uid,
                 username: username,
                 phone: phoneNumber,
+                joined: date.toDateString(),
               })
               .then(() => {
                 console.log("users other data's added");
@@ -114,7 +118,7 @@ export default function Signup(props) {
                   <div className="forms">
                     <div className="_2jvJo">
                       <div>
-                        <div className="rui-3OXDo">
+                        <div className=" rui-3OXDo rui-3OXDo22">
                           <div className="rui-2zp0U rui-2rouh">
                             <div className="rui-z4oOZ">
                               <div className="rui-3APY9">
@@ -139,7 +143,7 @@ export default function Signup(props) {
                     </div>
                     <div className="_2jvJo">
                       <div>
-                        <div className="rui-3OXDo">
+                        <div className="rui-3OXDo rui-3OXDo22">
                           <label for="email_input_field"></label>
                           <div className="rui-2zp0U rui-2rouh">
                             <div className="rui-z4oOZ">
@@ -166,7 +170,7 @@ export default function Signup(props) {
 
                     <div className="_2jvJo">
                       <div>
-                        <div className="rui-3OXDo">
+                        <div className="rui-3OXDo rui-3OXDo22">
                           <label for="email_input_field"></label>
                           <div className="rui-2zp0U rui-2rouh">
                             <div className="rui-z4oOZ">
@@ -197,7 +201,7 @@ export default function Signup(props) {
                     </div>
                     <div className="_2jvJo">
                       <div>
-                        <div className="rui-3OXDo">
+                        <div className="rui-3OXDo rui-3OXDo22">
                           <label for="password_input_field"></label>
                           <div className="rui-2zp0U rui-2rouh">
                             <div className="rui-z4oOZ">

@@ -1,37 +1,81 @@
-._2dtTPe {
+._3nqdZ {
+  right: 84px;
+  top: 59px;
+  width: 288px;
   position: absolute;
-  display: flex;
-  justify-content: right;
-  right: 50px;
-  top: 60px;
-}
-._2Jv6ie {
-  column-count: 1;
-  width: 200px;
-  box-shadow: 0 4px 12px 1px rgb(0 0 0 / 50%);
+  background: #fff;
+  box-shadow: 0 0 6px 0 rgb(0 0 0 / 12%), 0 6px 6px 0 rgb(0 0 0 / 24%);
   border-radius: 4px;
-  background-color: #fff;
-  justify-content: space-between;
-  padding: 5px 0;
 }
-._3Wfs8e ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
+._3nqdZ:after {
+  bottom: 100%;
+  right: 16px;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 12px solid transparent;
+  border-bottom-color: #fff;
 }
-._3Wfs8e li {
-  cursor: pointer;
-  padding: 8px 15px 8px 15px;
+._3nqdZ:before {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  width: 36px;
+  height: 36px;
+  bottom: 461px;
+  right: 10px;
+  z-index: -1;
+  box-shadow: 0 0 6px 0 rgb(0 0 0 / 12%), 0 6px 6px 0 rgb(0 0 0 / 24%);
 }
-._3Wfs8e li span {
+
+._3hG1N {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+._3hG1N ._2c-2r {
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0px 0px 0px 12px;
+}
+._3hG1N ._1PjtT,
+._3hG1N ._1dYHv {
+  margin: 0px 0px 4px;
+}
+.rui-2Mm6c {
   font-size: 14px;
   line-height: 20px;
-  font-weight: 700;
-  color: #002f34;
 }
-._3Wfs8e li ._3K1Q5 {
-  float: right;
+.rui-xL1fl {
+  font-size: 20px;
+  line-height: 24px;
 }
-._3Wfs8 li ._3K1Q5 button {
-  height: 20px;
+._3hG1N ._1HK4r {
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(0, 47, 52);
+  text-decoration: underline;
+}
+._1Up9t {
+  border-top: 1px solid rgba(0, 47, 52, 0.2);
+}
+._243cz {
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  color: rgb(0, 47, 52);
+  height: 48px;
+  font-size: 16px;
+}
+._243cz .cfoYk {
+  padding: 2px 16px 0px 0px;
+}
+._243cz.aTsM5 {
+  border-top: 1px solid rgba(0, 47, 52, 0.2);
 }

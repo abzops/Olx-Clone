@@ -58,7 +58,6 @@
 }
 
 .input .inputChild ._18aBn {
-  min-width: 630px;
   height: 48px;
   display: flex;
   flex: 1;
@@ -68,7 +67,7 @@
 }
 ._3hLH0 {
   height: 48px;
-  width: 100%;
+  width: 272px;
   max-height: 320px;
   overflow: unset;
   z-index: 6;
@@ -148,10 +147,8 @@
   left: 109px;
 }
 .dropdown-div {
-  padding-right: 15px;
+  margin-right: 85px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .location-root {
   max-height: 320px;
@@ -543,4 +540,21 @@ textarea {
 }
 .rui-l7uK1 {
   fill: #002f34;
+}
+
+._14lZ9 .J1zUM {
+  margin: 0 8px;
+}._2-GoQ {
+  width: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}.rui-1gV1x {
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
 }

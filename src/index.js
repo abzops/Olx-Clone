@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import Context, { FirebaseContext } from "./store/Context";
+import Context, { FirebaseContext,AuthContext} from "./store/Context";
 import firebase from "./Firebase/Config";
 
 ReactDOM.render(

@@ -282,10 +282,6 @@
 .oogMA {
   margin-bottom: 28px;
 }
-.inputWidth {
-  position: relative;
-  width: 160%;
-}
 .inputWidth label {
   color: #002f34;
   display: block;

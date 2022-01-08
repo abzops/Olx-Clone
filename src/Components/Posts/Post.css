@@ -1,14 +1,15 @@
-.postParentDiv {
-  padding: 30px;
+.main {
+  padding: 0px 50px;
 }
-.moreView {
-  margin: 140px 16px 24px;
-  padding: 16px 16px 32px;
+._37idJ {
   background-color: #ebeeef;
   border-radius: 4px;
 }
-
-.heading {
+._1yHmb {
+  padding: 16px 16px 32px;
+  margin: 186px 0 24px;
+}
+._1yHmb .QFgwi {
   font-size: 24px;
   margin: 0 0 16px;
   color: #002f34;
@@ -16,91 +17,129 @@
   justify-content: space-between;
   align-items: center;
 }
-.viewMoreBtn {
+.rui-39-wj.rui-3-PNI {
   color: #002f34;
-  border: none;
   border-bottom: 2px solid #002f34;
   padding: 0;
   height: auto;
-  font-weight: 700;
-  transition: border-bottom 430ms ease-in-out;
-}
-.viewMoreBtn:hover {
-  border-bottom: transparent;
-}
-.heading :first-child {
-  font-size: 24px;
-  color: #002f34;
 }
 
-.heading :last-child {
+.rui-39-wj.rui-2K0j9 {
   font-size: 14px;
-  color: #002f34;
+  height: 40px;
 }
-
-.recommendations .cards {
+.rui-32FMc {
   display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-between;
 }
-
-.moreView .cards {
-}
-
-.card {
-  margin-right: 15px;
-  max-width: 25%;
-  width: 25%;
-  height: 273px;
-  display: inline-block;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  text-decoration: none;
-  box-sizing: border-box;
-  background: #fff;
-  border: 1px solid rgba(0, 47, 52, 0.2);
-  overflow: hidden;
-  border-radius: 4px;
-}
-
-.card .favorite {
+.rui-22qlo {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  position: absolute;
-  right: 5px;
-  top: 10px;
-}
-
-.card .image {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
+  position: relative;
+}
+.rui-22qlo:first-child .rui-OKqI7 {
+  left: 0;
+  padding-right: 4px;
 }
 
-.card .image img {
-  height: 100px;
-  max-width: 100%;
-  max-height: 100%;
-  min-height: 100%;
-  text-align: center;
+.rui-OKqI7 {
+  display: flex;
+  position: absolute;
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+  cursor: pointer;
+  z-index: 1;
+}
+.rui-3KQ-t {
+  fill: #000;
+}
+.rui-396LP {
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  scrollbar-width: none;
+}
+._1yHmb ._1_a8d {
+  margin: 0 8px;
+  width: calc(25% - 12px);
+  position: relative;
+  text-align: left;
+}
+
+.EIR5N > a {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
-.card .content {
+._2LYp_ {
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  right: 0;
+}
+.rui-1rYgw {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+.rui-4K4Y7 {
+  fill: #002f34;
+}
+._2VDJl > a > figure,
+.EIR5N > a > figure,
+._8HqL0 > a > figure {
+  position: relative;
+  background-color: #fff;
+  height: 160px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+._2grx4 img._3Kg_w {
+  max-height: 100%;
+}
+._2VDJl > a > figure > img,
+.EIR5N > a > figure > img,
+._8HqL0 > a > figure > img {
+  max-width: 100%;
+}
+.EIR5N > a .IKo3_ {
   display: flex;
   flex-direction: column;
   flex: 1;
   position: relative;
   padding: 8px 16px;
-  /* border-left: 5px solid #ffce32; */
-  color: rgba(0, 47, 52, 0.64);
-  font-size: 14px;
 }
-.card .content p {
-  margin-bottom: 5px;
+.EIR5N > a .IKo3_ ._2TVI3,
+.EIR5N > a .IKo3_ ._89yzn,
+.EIR5N > a .IKo3_ ._2tW1I,
+.EIR5N > a .IKo3_ label {
+  text-align: left;
+  display: block;
 }
-.card .content .rate {
+
+._2VDJl > a .IKo3_ ._89yzn,
+.EIR5N > a .IKo3_ ._89yzn,
+._8HqL0 > a .IKo3_ ._89yzn {
   direction: ltr;
   font-weight: 700;
   margin-bottom: 0;
@@ -110,38 +149,65 @@
   color: #002f34;
   font-size: 20px;
 }
-.card .content .kilometer {
+.EIR5N > a .IKo3_ ._2tW1I {
   font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: 5px;
 }
-.card .content .name {
-  font-size: small;
+.EIR5N > a .IKo3_ ._2TVI3,
+.EIR5N > a .IKo3_ ._89yzn,
+.EIR5N > a .IKo3_ ._2tW1I,
+.EIR5N > a .IKo3_ label {
+  text-align: left;
+  display: block;
 }
-.card .date {
+._2VDJl > a .IKo3_ ._2tW1I,
+.EIR5N > a .IKo3_ ._2tW1I,
+._8HqL0 > a .IKo3_ ._2tW1I {
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 14px;
+}
+._2VDJl > a .IKo3_ ._89yzn,
+._2VDJl > a .IKo3_ ._2tW1I,
+._2VDJl > a .IKo3_ label,
+.EIR5N > a .IKo3_ ._89yzn,
+.EIR5N > a .IKo3_ ._2tW1I,
+.EIR5N > a .IKo3_ label,
+._8HqL0 > a .IKo3_ ._89yzn,
+._8HqL0 > a .IKo3_ ._2tW1I,
+._8HqL0 > a .IKo3_ label {
+  margin: 5px 0;
+  position: relative;
+  z-index: 2;
+}
+._2VDJl ._1KOFM,
+.EIR5N ._1KOFM,
+._8HqL0 ._1KOFM {
   display: flex;
   margin-top: auto;
-  justify-content: flex-end;
+  justify-content: space-between;
   text-transform: uppercase;
   color: rgba(0, 47, 52, 0.64);
   font-size: 10px;
+  padding-top: 30px;
 }
-.card .place {
-  display: flex;
-  margin-top: -13px;
-  justify-content: flex-start;
+._2VDJl ._1KOFM .zLvFQ,
+.EIR5N ._1KOFM .zLvFQ,
+._8HqL0 ._1KOFM .zLvFQ {
   text-transform: uppercase;
-  color: rgba(0, 47, 52, 0.64);
-  font-size: 10px;
+  margin-left: auto;
 }
-
-.recommendations {
-  margin: 16px 35px 24px;
-}
-
-.recommendations .heading span {
-  font-size: 24px;
-  color: #002f34;
+._2VDJl > a,
+.EIR5N > a,
+._8HqL0 > a {
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid rgba(0, 47, 52, 0.2);
+  overflow: hidden;
+  border-radius: 4px;
 }

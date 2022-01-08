@@ -7,6 +7,9 @@ import Signup from "../src/Pages/Signup";
 import Login from "./Pages/Login";
 import Create from "./Components/Create/Create";
 import { AuthContext, FirebaseContext } from "./store/Context";
+import View from "./Components/View/View";
+import Post from "./store/PostContext";
+import EditProfilePage from "./Pages/EditProfile";
 function App() {
   const { setUser } = useContext(AuthContext);
   useEffect(() => {
@@ -16,14 +19,18 @@ function App() {
   });
   return (
     <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Signup" element={<Signup />}></Route>
-          <Route path="/Login" element={((<Home />), (<Login />))}></Route>
-          <Route path="/create" element={<Create />}></Route>
-        </Routes>
-      </Router>
+      <Post>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/Signup" element={<Signup />}></Route>
+            <Route path="/Login" element={((<Home />), (<Login />))}></Route>
+            <Route path="/create" element={<Create />}></Route>
+            <Route path="/viewPost" element={<View />}></Route>
+            <Route path="/editprofile" element={<EditProfilePage />}></Route>
+          </Routes>
+        </Router>
+      </Post>
     </div>
   );
 }

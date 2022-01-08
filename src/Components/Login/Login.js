@@ -260,7 +260,7 @@ function Login(props) {
                           <div className="rui-3OXDo">
                             <label for="email_input_field"></label>
                             <div className="rui-2zp0U rui-2rouh">
-                              <div className="rui-z4oOZ">
+                              <div className="rui-z4oOZ" style={{width:"360px"}}>
                                 <div className="rui-3APY9">
                                   <input
                                     type="email"
@@ -286,7 +286,7 @@ function Login(props) {
                           <div className="rui-3OXDo">
                             <label for="password_input_field"></label>
                             <div className="rui-2zp0U rui-2rouh">
-                              <div className="rui-z4oOZ">
+                              <div className="rui-z4oOZ" style={{width:"360px"}}>
                                 <div className="rui-3APY9">
                                   <input
                                     type="password"
